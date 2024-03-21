@@ -2,7 +2,7 @@
 """function that deletes a key in a dictionary"""
 
 
-def simple_delete(a_dictionary, key=""):
+def simple_delete(a_dictionary, key = ""):
     if a_dictionary:
         try:
                 del a_dictionary[key]
