@@ -4,7 +4,7 @@ def best_score(a_dictionary):
         return None
     key = ""
     bestvalue = 0
-    for k , v in a_dictionary.items():
+    for k, v in a_dictionary.items():
         if v >= bestvalue:
                 bestvalue = v
                 key = k
