@@ -8,6 +8,6 @@ def best_score(a_dictionary):
         best_val = 0
         for i in my_list:
                 if a_dictionary[i] > best_val:
-                    best_val = a_dictionary
+                    best_val = a_dictionary[i]
                     key = i
         return key
