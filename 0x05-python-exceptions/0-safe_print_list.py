@@ -5,7 +5,7 @@ def safe_print_list(my_list=[], x=0):
         while i is not x:
             print(my_list[i], end="")
             i += 1
-        print()
-        print(f"number of items is: {i}")
     except IndexError:
         print("out of range")
+    print()
+    print(f"number of items is: {i}")
