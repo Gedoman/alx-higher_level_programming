@@ -8,4 +8,4 @@ def safe_print_list(my_list=[], x=0):
     except IndexError:
         print("out of range")
     print()
-    print(f"number of items is: {i}")
+    return i
