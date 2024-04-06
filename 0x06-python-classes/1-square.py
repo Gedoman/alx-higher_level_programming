@@ -4,7 +4,7 @@
 
 class Square:
     """Define a Square"""
-    def __init__(self, ize):
+    def __init__(self, size):
         """Constructor.
         Parameters:
         ----------
