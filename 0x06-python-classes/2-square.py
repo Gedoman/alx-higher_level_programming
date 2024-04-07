@@ -4,7 +4,7 @@
 class Square:
     """Define a Square."""
 
-    def __inti__(self, size=0):
+    def __init__(self, size=0):
         """ Constructor.
 
         Arge:
@@ -15,7 +15,7 @@ class Square:
             TypeError : if size is not an integer
             ValueError : if size is less than zero
         """
-        if size not in(int):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
