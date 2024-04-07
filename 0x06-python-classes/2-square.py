@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Square Modual"""
 
+
 class Square:
     """Define a Square."""
 
@@ -20,5 +21,3 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-
-
