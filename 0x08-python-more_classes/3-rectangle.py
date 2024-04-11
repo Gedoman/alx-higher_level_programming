@@ -11,8 +11,8 @@ class Rectangle:
         self.width = width
     @property
     def width(self):
-    """getter for the private instance attribute width"""
-    return self.__width
+        """getter for the private instance attribute width"""
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -28,7 +28,7 @@ class Rectangle:
         """getter for the private instance attribute height"""
         return self.__height
 
-   @height.setter
+    @height.setter
     def height(self, value):
         """setter for the prived instance attribute height"""
         if type(value) is not int:
@@ -48,7 +48,7 @@ class Rectangle:
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """return printable string representation of the rectangle"""
+        """returns printable string representation of the rectangle"""
         string = ""
         if self.__width != 0 and self.__heigth != 0:
             string += "\n".join("#" * self.__width
