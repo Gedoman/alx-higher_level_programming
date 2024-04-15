@@ -9,4 +9,4 @@ def lookup(obj):
     Ruturn:
         list: the list of attributes.
     """
-    print(dir(obj))
+    return dir(obj)
