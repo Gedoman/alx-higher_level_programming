@@ -8,5 +8,5 @@ def write_file(filename="", text=""):
         filename: file
         text:text will me added in the file
     """
-    with open(filename,encoding="utf-8") as file:
+    with open(filename,"w",encoding="utf-8") as file:
        return file.write(text)
