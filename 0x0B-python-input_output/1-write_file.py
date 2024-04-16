@@ -9,4 +9,4 @@ def write_file(filename="", text=""):
         text:text will me added in the file
     """
     with open(filename,encoding="utf-8") as file:
-        file.write('This School is so cool!\n')
+       return file.write(text)
