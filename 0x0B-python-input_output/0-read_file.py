@@ -4,7 +4,7 @@
 
 def read_file(filename=""):
     """red the file
-    Args: 
+    Args:
         filename: file
     """
     with open(filename, encoding="utf-8") as file:
