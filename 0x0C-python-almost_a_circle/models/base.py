@@ -4,7 +4,7 @@ import json
 
 
 class Base:
-    """a representation of the base of our hierarchy"""
+    """a representation of the base of our hierarchy."""
 
     __nb_objects = 0
 
