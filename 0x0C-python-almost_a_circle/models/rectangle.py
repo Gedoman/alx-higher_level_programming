@@ -2,6 +2,7 @@
 """ module for class Rectangle"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """constructor"""
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -64,13 +65,13 @@ class Rectangle(Base):
         """prints string representation of rectangle"""
         s = "\n" * self.y + \
             (" " * self.x + "#" * self.width + "\n") * self.height
-        print(s, end = " ")
+        print(s, end=" ")
 
     def __str__(self):
         """return string info about this rectangle"""
         return "[{}] ({}) {}/{} - {}/{}".\
-                format(type(self).__name__, self.id, self.x, self.y, self.width,
-                        sels.height)
+            format(type(self).__name__, self.id, self.x, self.y, self.width,
+                   sels.height)
 
     def __update(self, id=None, width=None, height=None, x=None, y=None):
         """internal method that update istance attributes"""
@@ -96,4 +97,4 @@ class Rectangle(Base):
     def to_dictionary(self):
         """returns the dictionary representation of a Rectangle"""
         return {"id": self.id, "width": self.__width, "height": self.__height,
-                "x": self.__x, "y":self.__y}
+                "x": self.__x, "y": self.__y}
