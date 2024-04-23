@@ -29,7 +29,7 @@ class Base:
         """saves jsonified object to file"""
         if list_objs is not None:
             list_objs = [x.to_json_string() for x in list_objs]
-        with open("{}.json".format(cls.__name__,"w",encoding="utf-8") as file:
+        with open("{}.json".format(cls.__name__), "w",encoding="utf-8") as file:
                 file.write(cls.to_json_string(list_objs))
 
     @staticmethod
@@ -38,7 +38,7 @@ class Base:
         if json_string is None or  not json_string:
             return "[]"
         else:
-        return loads(json_string)
+             return loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
@@ -63,6 +63,6 @@ class Base:
         file = "{}.json".format(cls.__name__)
         if not path.isfile(file):
             return []
-        with open(file, "r", encoding="utf-8") as f
+        with open(file, "r", encoding="utf-8") as f:
             return [cls.create(**x) for x in cls.from_json_string(f.read())]
 
